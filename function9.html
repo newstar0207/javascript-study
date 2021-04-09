@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Function9</title>
+</head>
+
+<body>
+    <script>
+        var array = [];
+
+        function makeID(ID) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] == ID) {
+                    return alert("이미 존재하는 아이디 입니다");
+                }
+
+                array.push(ID);
+                document.writeln(array);
+            }
+        }
+
+        makeID(prompt("생성하고 싶은 ID 입력 "));
+
+    </script>
+</body>
+
+</html>

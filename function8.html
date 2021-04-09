@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Function8</title>
+</head>
+
+<body>
+    <script>
+        var memberName = [];
+        var memberName = [];
+        var memngerAge = [];
+
+        let i = 0; // 등록된 회원 
+
+        function Registration(value, info, num) {
+            switch (value) {
+                case ("이름"):
+                    memberName[num] = `${num}:${info}`;
+                    break;
+                case ("전화번호 "):
+                    memberNumber[num] = `${num}:${info}`;
+                    break;
+                case ("나이"):
+                    memberAge[num] = `${num}:${info}`;
+                    break;
+            }
+        }
+
+        let num = prompt("회원 번호를 입력하세요 ");
+        let value = prompt("입력을 원하는 정보 (이름, 전화번호, 나이)");
+        let info = prompt("추가할 정보를 입력 : ");
+
+        Registration(value, info, num);
+
+        document.writeln(memberName);
+        document.writeln(memngerAge);
+        document.writeln(memberNumber);
+
+    </script>
+</body>
+
+</html>

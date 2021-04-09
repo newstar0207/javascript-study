@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Function5</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+
+        function smallestNum() {
+            let smallNum = 100;
+
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] < smallNum) {
+                    smallNum = array[i];
+                }
+            }
+            alert(smallNum);
+            return smallNum;
+        }
+
+        for (let i = 0; i < 10; i++) {
+            array[i] = Math.floor(Math.random() * 100 + 1);
+        }
+
+        document.write(array);
+        document.write("<br>" + smallestNum());
+
+    </script>
+</body>
+
+</html>

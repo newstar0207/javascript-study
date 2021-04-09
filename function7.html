@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Function7</title>
+</head>
+
+<body>
+    <script>
+        var array = [];
+
+        function avg() {
+            let result = 0;
+            for (let i = 0; i < array.length; i++) {
+                result += +array[i];
+            }
+            alert(result);
+
+            result = result / array.length;
+            return result;
+        }
+
+        while (true) {
+            let num = prompt("평균을 구하기 위한 숫자를 입력 : ");
+            if (num == null) {
+                break;
+            }
+            array.push(num);
+        }
+
+        alert(avg());
+
+    </script>
+</body>
+
+</html>

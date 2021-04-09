@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Function2</title>
+</head>
+
+<body>
+    <script>
+        function withoutBlankSpaces(string) {
+            let size = string.length;
+            let count = 0;
+            for (let i = 0; i < size; i++) {
+                if (string.charAt(i) == " ") {
+                    count++;
+                }
+            }
+            document.write(size - count);
+            return size - count;
+        }
+
+        let string = prompt("문자열을 입력하세요 ");
+    </script>
+</body>
+
+</html>

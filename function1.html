@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+
+        function containSpecialCharacter(value) { // 특수문자를 포함하는가? 
+            let contain = false;
+            let speChar = value;
+            for (let i = 0; i < speChar.length; i++) {
+                if (speChar.charCodeAt(i) >= 33 && speChar.charCodeAt(i) <= 38) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

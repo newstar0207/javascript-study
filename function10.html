@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Function10</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+
+        function todayWork(date) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i].startsWith(date)) {
+                    return array[i];
+                }
+            }
+            return "no work";
+        }
+
+        while (true) {
+            let work = prompt("할 일을 입력하세요 (0409 work)");
+            if (work == null) {
+                break;
+            }
+            array.push(work);
+        }
+
+        document.write(todayWork("0409"));
+
+    </script>
+</body>
+
+</html>
